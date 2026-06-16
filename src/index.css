@@ -38,6 +38,8 @@
   --color-cream-300: #D8D6CE;
   --color-ink:       #26251e;
   --color-ink-50:    rgba(38, 37, 30, 0.5);
+  --color-accent-base: #3d5a40;
+  --color-accent-hover: #2f4632;
 
   /* ── Semantic — purpose-based, reference primitives ──
    * These are the tokens you use in components.
@@ -51,6 +53,8 @@
   --color-action-primary-hover:    var(--color-gray-700);
   --color-action-secondary:        var(--color-cream-200);
   --color-action-secondary-hover:  var(--color-cream-300);
+  --color-accent:                  var(--color-accent-base);
+  --color-surface-elevated:        var(--color-cream-200);
 
   /* ── Component — map to semantic tokens ──
    * These power specific UI elements.
@@ -64,4 +68,5 @@
    * --font-{name} → font-{name}
    * e.g. --font-sans → font-sans (applied on <body> in index.html) */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
