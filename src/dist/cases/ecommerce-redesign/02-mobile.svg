@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="800" viewBox="0 0 400 800">
+  <rect width="400" height="800" fill="#f2f1ed"/>
+  <rect x="40" y="40" width="320" height="720" rx="32" fill="#fff" stroke="#D8D6CE" stroke-width="4"/>
+  <rect x="60" y="80" width="280" height="200" rx="8" fill="#e6e5e0"/>
+  <rect x="60" y="300" width="200" height="20" rx="4" fill="#26251e"/>
+  <rect x="60" y="340" width="160" height="14" rx="4" fill="#666"/>
+  <rect x="60" y="400" width="280" height="48" rx="24" fill="#111"/>
+  <text x="200" y="760" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#666">02  Mobile</text>
+</svg>

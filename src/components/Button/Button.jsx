@@ -1,18 +1,26 @@
 // Button.jsx — Reusable button component.
-// Props: label (text), variant ("secondary" | "primary")
+// Props: label (text), variant ("secondary" | "primary"), href (optional — renders as link)
 
-function Button({ label, variant = "secondary" }) {
-    // Shared styles for all buttons
-    const base = "mt-auto w-fit rounded-full px-6 py-3.5 text-base font-medium cursor-pointer border-none transition-colors duration-200";
+function Button({ label, variant = "secondary", href }) {
+    const base = "inline-block mt-auto w-fit rounded-full px-6 py-3.5 text-base font-medium cursor-pointer border-none transition-colors duration-200 no-underline text-center";
 
-    // Variant-specific colours — each class maps to a component token in index.css
     const variants = {
         secondary: "bg-btn-secondary text-text-primary hover:bg-btn-secondary-hover",
         primary:   "bg-btn-primary text-white hover:bg-btn-primary-hover",
     };
 
+    const className = `${base} ${variants[variant]}`;
+
+    if (href) {
+        return (
+            <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+                {label}
+            </a>
+        );
+    }
+
     return (
-        <button className={`${base} ${variants[variant]}`}>
+        <button type="button" className={className}>
             {label}
         </button>
     );
